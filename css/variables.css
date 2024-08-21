@@ -3,8 +3,13 @@
     --color-primary: #1363DF;
     --color-secondary: #6c757d;
     --color-background: #f8f9fa;
+    --color-grey-light: #d1d3d6;
+    --color-grey-dark: #545d63;
+    --color-blue-dark: #06283d;
+    --color-blue-light: #1b252c;
     --color-text: #172026;
     --color-border: #dee2e6;
+    --color-border-light: #dee2e6;
     --color-white: #fff;
     
     /* Typography */
@@ -17,11 +22,11 @@
     --font-weight-bold: 700;
     
     /* Spacing */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
+    --spacing-xs: .5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
     
     /* Borders & Shadows */
     --border-radius: 8px;
