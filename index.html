@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ENIA PRODUCT LISTING</title>
+    <meta name="description" content="Men's Outerwear Products Listing" />
+    <title>Venia Product Listing</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   </head>
@@ -11,11 +12,11 @@
     <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
-          <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
+          <label class='header__menu-button-container' for="menu-toggle">
+            <div class='header__menu-button'></div>
           </label>
           <a href="#" class="header__logo">
-            <img src="./images/logo.png" alt="Logo" class="header__logo-image" />
+            <img src="./images/logo.png" loading="lazy" alt="Logo" class="header__logo-image" />
           </a>
           <ul class="header__list">
             <li class="header__item">
@@ -42,7 +43,7 @@
     <section class="banner">
       <div class="banner__content">
         <div class="banner__image-container">
-          <img src="./images/banner.png" alt="Banner Image" class="banner__image" />
+          <img src="./images/banner.png" loading="lazy" alt="Banner Image" class="banner__image" />
         </div>
         <div class="banner__text">
           <h1 class="banner__heading">
@@ -52,8 +53,8 @@
         </div>       
       </div>
     </section>
-    <div class="container main-content">
-      <main class="main">
+    
+      <main class="main container main-content">
         <aside class="sidebar">
           <nav class="breadcrumb">
             <ul class="breadcrumb__list">
@@ -72,22 +73,23 @@
             <h2 class="filter__title">Filters</h2>
             <h2 class="filter__subtitle">Categories</h2>
             <div class="filter__categories">
-              <input type="checkbox" id="jewellery" class="filter__checkbox" />
+              <input type="checkbox" id="jewelery" name="category" value="jewelery" class="filter__checkbox" />
               <label for="jewellery" class="filter__label">Jewellery</label>
             </div>
             <div class="filter__categories">
-              <input type="checkbox" id="electronics" class="filter__checkbox" />
+              <input type="checkbox" id="electronics" name="category" value="electronics" class="filter__checkbox" />
               <label for="electronics" class="filter__label">Electronics</label>
             </div>
             <div class="filter__categories">
-              <input type="checkbox" id="mens" class="filter__checkbox" />
+              <input type="checkbox" id="men" name="category" value="men's clothing" class="filter__checkbox" />
               <label for="mens" class="filter__label">Men's Clothing</label>
             </div>
             <div class="filter__categories">
-              <input type="checkbox" id="women" class="filter__checkbox" />
+              <input type="checkbox" id="women" name="category" value="women's clothing" class="filter__checkbox" />
               <label for="women" class="filter__label">Women's Clothing</label>
             </div>
           </div>
+         
         </aside>
         <section class="product-list">
           <div class="product-list__header">            
@@ -95,10 +97,10 @@
             <div class="product-list__sort-container">
               <div class="product-list__select-wrapper">
                 <select name="sort" title="sort" id="sort" class="product-list__sort">
-                  <option value="price" id="price">Sort by Price</option>
-                  <option value="category" id="category">Sort by Category</option>
-                  <option value="range" id="range">Sort by Range</option>
-                  <option value="availability" id="availability">Sort by Availability</option>
+                  <option value="price">Sort by Price</option>
+                  <option value="category">Sort by Category</option>
+                  <option value="range">Sort by Range</option>
+                  <option value="availability">Sort by Availability</option>
                 </select>
               </div>
             </div>
@@ -131,11 +133,12 @@
                   </span>
               </div>
             </div>
-            <span class="product-list__result-count">38 Results</span>
+            <span class="product-list__result-count">0 Results</span>
           </div>
           <div id="product-list" class="product-list__grid">
             <!-- Product list Section -->
           </div>
+          <button type="button" id="load-more" class="load-more">Load More</button>
         </section>
       </main>
       <div class="pagination" id="page-numbers">
@@ -154,7 +157,6 @@
           </svg>
         </button>
       </div>
-    </div>
     <footer class="footer">
       <div class="footer__container ">
         <div class="container footer__container-p0">
@@ -228,11 +230,10 @@
         </div>
         <p class="footer__bottom-text">© 2024 VENIA. All Rights Reserved.</p>
         <a href="#" class="footer__bottom-logo">
-          <img src="./images/footer_logo.png" alt="logo" class="footer__bottom-logo-image" />
+          <img src="./images/footer_logo.png" loading="lazy" alt="logo" class="footer__bottom-logo-image" />
         </a>
       </div>
     </footer>
-
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script> 
   </body>
 </html>
