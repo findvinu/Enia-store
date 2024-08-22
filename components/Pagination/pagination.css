@@ -1,0 +1,44 @@
+.pagination {
+    display: none;
+  }
+
+  @media (min-width: 64rem) {
+    .pagination {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+    
+      .pagination__button {
+        color: var(--color-text);
+        border: none;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+    
+      .pagination__button--next svg {
+        transform: rotate(180deg);
+      }
+    
+      .pagination__button:disabled svg {
+        fill: var(--color-grey-light);
+        cursor: not-allowed;
+      }
+    
+      .pagination__pages {
+        font-size: 1em;
+        margin-right: var(--spacing-xs);
+      }
+    
+      .pagination__page {
+        margin: 0 5px;
+        cursor: pointer;
+      }
+    
+      .pagination__page--active {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+  }

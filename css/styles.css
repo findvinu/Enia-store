@@ -133,10 +133,6 @@ body {
   margin-left: var(--spacing-xs);
 }
 
-.pagination {
-  display: none;
-}
-
 .load-more {
   background-color: var(--color-primary);
   padding: var(--spacing-xs) var(--spacing-sm);
@@ -162,7 +158,7 @@ body {
 
 /* Media Queries */
 
-@media (min-width: 48rem) { 
+@media (min-width: 48rem) {
   .main {
     flex-direction: row;
   }
@@ -273,8 +269,6 @@ body {
   .product-list__available {
     flex-direction: row;
   }
-
-  
 }
 
 /* Desktop Small - 1024px */
@@ -306,45 +300,6 @@ body {
   .product-list__title {
     font-size: var(--font-size-lg);
   }
-
-  .pagination {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .pagination__button {
-    color: var(--color-text);
-    border: none;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-
-  .pagination__button--next svg {
-    transform: rotate(180deg);
-  }
-
-  .pagination__button:disabled svg {
-    fill: var(--color-grey-light);
-    cursor: not-allowed;
-  }
-
-  .pagination__pages {
-    font-size: 1em;
-    margin-right: var(--spacing-xs);
-  }
-
-  .pagination__page {
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-  .pagination__page--active {
-    font-weight: bold;
-    text-decoration: underline;
-  }
 }
 
 /* Desktop Medium - 1280px */
@@ -358,10 +313,9 @@ body {
   }
 }
 
-
 /* Desktop X-Large - 1920px */
 @media (min-width: 120rem) {
   .container {
     max-width: 1920px;
-  } 
+  }
 }
