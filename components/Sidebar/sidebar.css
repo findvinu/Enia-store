@@ -1,0 +1,132 @@
+#sidebar-container {
+  width: 100%;
+}
+.sidebar {
+  width: 100%;
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-sm);
+}
+
+.breadcrumb {
+  padding: 10px 0;
+  font-size: var(--font-size-base);
+  margin-bottom: var(--spacing-sm);
+}
+
+.breadcrumb__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb__item {
+  margin-right: 5px;
+}
+
+.breadcrumb__link {
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-grey-dark);
+}
+
+.breadcrumb__item::after {
+  content: "/";
+  margin-left: 5px;
+}
+
+.breadcrumb__item:last-child::after {
+  content: "";
+}
+
+.breadcrumb__item--current .breadcrumb__text {
+  color: var(--color-grey-dark);
+}
+
+.breadcrumb__item--current .breadcrumb__link {
+  pointer-events: none;
+  color: var(--color-grey-dark);
+}
+
+.filter {
+  border-bottom: 2px solid var(--color-grey-light);
+  display: none;
+  margin-bottom: var(--spacing-md);
+}
+
+.filter__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #181c24;
+  margin-bottom: var(--spacing-sm);
+}
+
+.filter__checkbox,
+.filter__radio {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #91959c;
+  margin-right: var(--spacing-sm);
+}
+
+.filter__label {
+  color: var(--color-text);
+}
+
+@media (min-width: 48rem) {
+  #sidebar-container {
+    width: 34%;
+    margin-right: 2%;
+  }
+  .sidebar {
+    padding: var(--spacing-sm) 0;
+  }
+
+  .filter {
+    display: block;
+  }
+
+  .filter__title {
+    color: #181c24;
+    font-weight: 100;
+    font-size: 20px;
+    border-bottom: 2px solid var(--color-grey-light);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .filter__subtitle {
+    color: #181c24;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .filter__categories {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .breadcrumb {
+    margin-bottom: 35px;
+  }
+
+  .filter__checkbox {
+    margin-right: var(--spacing-sm);
+  }
+}
+
+@media (min-width: 64rem) {
+  #sidebar-container {
+    width: 23%;
+    margin-right: 2%;
+  }
+  .sidebar {
+    padding: var(--spacing-sm) 0;
+  }
+}

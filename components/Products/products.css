@@ -1,25 +1,3 @@
-@import url("reset.css");
-@import url("variables.css");
-
-body {
-  font-family: var(--font-family-primary);
-  font-size: var(--font-size-base);
-  color: var(--color-text);
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  width: 100%;
-  padding: 0 var(--spacing-sm);
-  margin: 0 auto;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
 .product-list {
   width: 100%;
 }
@@ -133,19 +111,6 @@ body {
   margin-left: var(--spacing-xs);
 }
 
-.pagination {
-  display: none;
-}
-
-.load-more {
-  background-color: var(--color-primary);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  color: var(--color-white);
-  margin: var(--spacing-xl) auto 0 auto;
-  font-size: var(--font-size-md);
-  cursor: pointer;
-}
-
 .product-list__footer {
   display: flex;
   align-items: center;
@@ -160,13 +125,7 @@ body {
   flex-direction: column;
 }
 
-/* Media Queries */
-
-@media (min-width: 48rem) { 
-  .main {
-    flex-direction: row;
-  }
-
+@media (min-width: 48rem) {
   .product-list__header {
     display: flex;
     align-items: center;
@@ -263,26 +222,12 @@ body {
   .product-list__title {
     height: 60px;
   }
-
-  .load-more {
-    padding: var(--spacing-sm) var(--spacing-md);
-    margin: var(--spacing-xl) auto;
-    font-size: var(--font-size-lg);
-  }
-
   .product-list__available {
     flex-direction: row;
   }
-
-  
 }
 
-/* Desktop Small - 1024px */
 @media (min-width: 64rem) {
-  .container {
-    max-width: 1024px;
-  }
-
   .product-list {
     width: 75%;
   }
@@ -306,62 +251,10 @@ body {
   .product-list__title {
     font-size: var(--font-size-lg);
   }
-
-  .pagination {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .pagination__button {
-    color: var(--color-text);
-    border: none;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-
-  .pagination__button--next svg {
-    transform: rotate(180deg);
-  }
-
-  .pagination__button:disabled svg {
-    fill: var(--color-grey-light);
-    cursor: not-allowed;
-  }
-
-  .pagination__pages {
-    font-size: 1em;
-    margin-right: var(--spacing-xs);
-  }
-
-  .pagination__page {
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-  .pagination__page--active {
-    font-weight: bold;
-    text-decoration: underline;
-  }
 }
 
-/* Desktop Medium - 1280px */
 @media (min-width: 80rem) {
-  .container {
-    max-width: 1280px;
-  }
-
   .product-list__grid {
     gap: var(--spacing-md);
   }
-}
-
-
-/* Desktop X-Large - 1920px */
-@media (min-width: 120rem) {
-  .container {
-    max-width: 1920px;
-  } 
 }

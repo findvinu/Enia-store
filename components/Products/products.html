@@ -1,0 +1,157 @@
+<link rel="stylesheet" href="./components/Products/products.css" />
+
+<section class="product-list">
+  <div class="product-list__header">
+    <div class="product-list__sort-container">
+      <div class="product-list__select-wrapper">
+        <select name="sort" title="sort" id="sort" class="product-list__sort">
+          <option value="price">Sort by Price</option>
+          <option value="category">Sort by Category</option>
+          <option value="range">Sort by Range</option>
+          <option value="availability">Sort by Availability</option>
+        </select>
+      </div>
+    </div>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search..."
+      class="product-list__search"
+    />
+    <div class="mobile-filter">
+      <div class="mobile-filter__results">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          class="mobile-filter__results-icon"
+        >
+          <g id="sliders" transform="translate(0 -2)">
+            <line
+              id="Line_563"
+              data-name="Line 563"
+              y1="6"
+              transform="translate(3 13)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_564"
+              data-name="Line 564"
+              y1="6"
+              transform="translate(3 3)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_565"
+              data-name="Line 565"
+              y1="8"
+              transform="translate(9 11)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_566"
+              data-name="Line 566"
+              y1="4"
+              transform="translate(9 3)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_567"
+              data-name="Line 567"
+              y1="4"
+              transform="translate(15 15)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_568"
+              data-name="Line 568"
+              y1="8"
+              transform="translate(15 3)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_569"
+              data-name="Line 569"
+              x2="4"
+              transform="translate(1 12.778)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_570"
+              data-name="Line 570"
+              x2="4"
+              transform="translate(7 7.444)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+            <line
+              id="Line_571"
+              data-name="Line 571"
+              x2="4"
+              transform="translate(13 14.556)"
+              fill="none"
+              stroke="#172026"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </g>
+        </svg>
+        <span class="mobile-filter__results-text"> Filter Results </span>
+      </div>
+      <div class="mobile-filter__sort">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7 4V20M7 20L3 16M7 20L11 16M17 4V20M17 4L21 8M17 4L13 8"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="mobile-filter__sort-text"> Sort Products </span>
+      </div>
+    </div>
+    <span class="product-list__result-count">0 Results</span>
+  </div>
+
+  <button type="button" id="load-more" class="load-more">Load More</button>
+</section>
